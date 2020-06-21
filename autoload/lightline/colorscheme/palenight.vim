@@ -1,6 +1,5 @@
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-let s:p_vertsplit = ["#0f0c19", 59, 15]
 let s:p_special_grey = ["#3B4048", 238, 15]
 let s:p_menu_grey = ["#15121f", 237, 8]
 let s:p_cursor_grey = ["#2C323C", 236, 8]
@@ -21,6 +20,8 @@ let s:p_white = ["#cccccc", 235, 0]
 let s:p_dark_gray = ["#15121f", 59, 15]
 
 let s:p_accent = copy(s:p_purple)
+
+let s:p_vertsplit = s:p_accent
 
 let s:p.normal.left     = [ [ s:p_white, s:p_accent ], [ s:p_white, s:p_menu_grey ] ]
 let s:p.normal.right    = copy(s:p.normal.left)
@@ -45,7 +46,7 @@ let s:p.tabline.right   = [ [ s:p_white, s:p_accent ] ]
 let s:p.tabline.middle  = [ [ s:p_white, s:p_black ] ]
 let s:p.tabline.tabsel  = copy(s:p.tabline.right)
 
-let s:p.inactive.left   = [ [ s:p_black, s:p_menu_grey ], [ s:p_black, s:p_menu_grey ] ]
+let s:p.inactive.left   = [ [ s:p_black, s:p_comment_grey ], [ s:p_black, s:p_comment_grey ] ]
 let s:p.inactive.right  = copy(s:p.inactive.left)
 let s:p.inactive.middle = [ [ s:p_black, s:p_menu_grey ] ]
 

@@ -23,7 +23,7 @@ let s:colors = {
       \ "visual_grey": get(s:overrides, "visual_grey", { "gui": "#3E4452", "cterm": "237", "cterm16": "15" }),
       \ "menu_grey": get(s:overrides, "menu_grey", { "gui": "#3E4452", "cterm": "237", "cterm16": "8" }),
       \ "special_grey": get(s:overrides, "special_grey", { "gui": "#3B4048", "cterm": "238", "cterm16": "15" }),
-      \ "vertsplit": get(s:overrides, "vertsplit", { "gui": "#030606", "cterm": "59", "cterm16": "15" }),
+      \ "vertsplit": get(s:overrides, "vertsplit", { "gui": "#5e4aB3", "cterm": "59", "cterm16": "15" }),
       \ "white_mask_1": get(s:overrides, "white_mask_1", { "gui": "#1f2225", "cterm": "237", "cterm16": "15" }),
       \ "white_mask_3": get(s:overrides, "white_mask_3", { "gui": "#474b59", "cterm": "238", "cterm16": "15" }),
       \ "white_mask_11": get(s:overrides, "white_mask_11", { "gui": "#989aa2", "cterm": "238", "cterm16": "15" })
