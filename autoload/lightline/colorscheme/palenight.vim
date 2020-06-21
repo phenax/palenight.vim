@@ -2,7 +2,7 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 
 let s:p_vertsplit = ["#0f0c19", 59, 15]
 let s:p_special_grey = ["#3B4048", 238, 15]
-let s:p_menu_grey = ["#3E4452", 237, 8]
+let s:p_menu_grey = ["#15121f", 237, 8]
 let s:p_cursor_grey = ["#2C323C", 236, 8]
 let s:p_gutter_fg_grey = ["#4B5263", 238, 15]
 let s:p_blue = ["#5e81ac", 39, 4]
@@ -18,10 +18,11 @@ let s:p_cyan = ["#89DDFF", 38, 6]
 let s:p_comment_grey = ["#697098", 59, 15]
 let s:p_black = ["#0f0c19", 235, 0]
 let s:p_white = ["#cccccc", 235, 0]
+let s:p_dark_gray = ["#15121f", 59, 15]
 
 let s:p_accent = copy(s:p_purple)
 
-let s:p.normal.left     = [ [ s:p_white, s:p_accent ], [ s:p_accent, s:p_white ] ]
+let s:p.normal.left     = [ [ s:p_white, s:p_accent ], [ s:p_white, s:p_menu_grey ] ]
 let s:p.normal.right    = copy(s:p.normal.left)
 let s:p.normal.middle   = [ [ s:p_white, s:p_black ] ]
 let s:p.normal.warning  = [ [ s:p_black, s:p_yellow ] ]
